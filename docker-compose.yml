@@ -1,0 +1,8 @@
+services:
+  hello-world:
+    build: .
+    image: hello-world-ci-cd:latest
+    container_name: hello-world
+    ports:
+      - "80:80"
+    restart: unless-stopped
